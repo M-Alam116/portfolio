@@ -18,7 +18,7 @@ body {
 
 .active {
   color: #fec544;
-  border-bottom: solid 3px #fec544;
+  border-bottom: solid 3px #dfab30;
 }
 
 .hamburger {
@@ -30,9 +30,9 @@ body {
     @apply max-w-full w-[1440px] mx-auto;
   }
 
-  /* .btn {
-    @apply bg-primaryColor py-[10px] px-[30px] text-white font-[500] shadow-xl drop-shadow-2xl;
-  } */
+  .btn {
+    @apply bg-secondaryColor py-[15px] px-[40px] text-black text-[15px] font-[500] rounded-[60px] shadow-2xl drop-shadow-2xl;
+  }
 
   .heading {
     @apply text-[24px] font-[600] text-secondaryColor;

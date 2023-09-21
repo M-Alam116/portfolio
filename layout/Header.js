@@ -13,12 +13,12 @@ export default function Header() {
 
   return (
     <header
-      className="container bg-primaryBg text-primaryColor sticky top-0 shadow-md z-[999999] px-[20px] py-[10px] text-[18px] font-[500]"
+      className="container bg-primaryBg bg-opacity-80 text-primaryColor sticky top-0 shadow-md z-[999999] px-[10px] sm:px-[55px] py-[10px] text-[18px] font-[500]"
       ref={headerRef}
     >
       <div className="flex justify-between items-center">
         {/* ========== logo ============ */}
-        <div>
+        <div className="">
           {/* <Link href="/">
               <Image src="/logo.png" width={100} height={85} alt="logo" />
             </Link> */}
@@ -29,10 +29,10 @@ export default function Header() {
         <div className="navigation" ref={menuRef} onClick={toggleMenu}>
           <ul className="menu relative flex gap-[30px]">
             <ImCross className="block text-primaryColor absolute top-5 left-5 md:hidden" />
-            <Link href="#home">
+            <Link href="/">
               <li
                 className={
-                  router.pathname === "#home"
+                  router.pathname === "/"
                     ? "active"
                     : "hover:text-secondaryColor"
                 }
