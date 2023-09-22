@@ -3,6 +3,7 @@ import Head from "next/head";
 import Home from "@/components/Home";
 import About from "@/components/About";
 import Services from "@/components/Services";
+import Skill from "@/components/Skill";
 export default function HomePage() {
   return (
     <Fragment>
@@ -12,6 +13,7 @@ export default function HomePage() {
       <Home />
       <About />
       <Services />
+      <Skill />
     </Fragment>
   );
 }

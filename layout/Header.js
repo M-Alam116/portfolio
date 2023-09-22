@@ -62,10 +62,10 @@ export default function Header() {
                 Services
               </li>
             </Link>
-            <Link href="#skills">
+            <Link href="#skill">
               <li
                 className={
-                  router.pathname === "#skills"
+                  router.pathname === "#skill"
                     ? "active"
                     : "hover:text-secondaryColor"
                 }

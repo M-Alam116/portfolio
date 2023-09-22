@@ -2,7 +2,7 @@ import Image from "next/image";
 import Link from "next/link";
 export default function About() {
   return (
-    <section className="container flex flex-col py-[30px] px-[10px]">
+    <section className="container flex flex-col pt-[60px] px-[10px]" id="about">
       <div className="flex flex-col mx-auto justify-center items-center relative">
         <h1 className="text-[55px] md:text-[90px] font-[700] text-[#151B29] text-center">
           ABOUT ME

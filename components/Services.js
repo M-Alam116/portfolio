@@ -2,7 +2,10 @@ import { FaFigma } from "react-icons/fa";
 import { DiNodejs } from "react-icons/di";
 export default function Services() {
   return (
-    <section className="container flex flex-col py-[30px] px-[10px]">
+    <section
+      className="container flex flex-col pt-[60px] px-[10px]"
+      id="services"
+    >
       <div className="flex flex-col mx-auto justify-center items-center relative">
         <h1 className="text-[55px] md:text-[90px] font-[700] text-[#151B29] text-center">
           SERVICES
@@ -16,7 +19,7 @@ export default function Services() {
       </div>
 
       <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-[2rem] place-items-center mt-[2rem]">
-        <div className="group max-w-[380px] bg-[#101624] w-full flex flex-col items-center justify-center gap-[1rem] border-[2px] border-primaryColor border-opacity-10 px-[1rem] py-[2rem] rounded-md">
+        <div className="group max-w-[380px] bg-[#101624] w-full flex flex-col items-center justify-center gap-[1rem] border-[2px] border-primaryColor border-opacity-10 hover:border-secondaryColor transition-all duration-500 px-[1rem] py-[2rem] rounded-md">
           <div className="w-[100px] h-[100px] rounded-[100px] border-[2px] bg-primaryBg border-primaryColor group-hover:border-secondaryColor transition-all duration-500 border-opacity-10 flex items-center justify-center">
             <svg
               xmlns="http://www.w3.org/2000/svg"
@@ -40,7 +43,7 @@ export default function Services() {
           </p>
         </div>
 
-        <div className="group max-w-[380px] bg-[#101624] w-full flex flex-col items-center justify-center gap-[1rem] border-[2px] border-primaryColor border-opacity-10 px-[1rem] py-[2rem] rounded-md">
+        <div className="group max-w-[380px] bg-[#101624] w-full flex flex-col items-center justify-center gap-[1rem] border-[2px] border-primaryColor border-opacity-10 hover:border-secondaryColor transition-all duration-500 px-[1rem] py-[2rem] rounded-md">
           <div className="w-[100px] h-[100px] rounded-[100px] border-[2px] bg-primaryBg border-primaryColor group-hover:border-secondaryColor transition-all duration-500 border-opacity-10 flex items-center justify-center">
             <DiNodejs className="h-[80px] w-[80px] text-primaryColor opacity-30 group-hover:text-secondaryColor group-hover:opacity-100 transition-all duration-500" />
           </div>
@@ -54,7 +57,7 @@ export default function Services() {
           </p>
         </div>
 
-        <div className="group max-w-[380px] bg-[#101624] w-full flex flex-col items-center justify-center gap-[1rem] border-[2px] border-primaryColor border-opacity-10 px-[1rem] py-[2rem] rounded-md">
+        <div className="group max-w-[380px] bg-[#101624] w-full flex flex-col items-center justify-center gap-[1rem] border-[2px] border-primaryColor border-opacity-10 hover:border-secondaryColor transition-all duration-500 px-[1rem] py-[2rem] rounded-md">
           <div className="w-[100px] h-[100px] rounded-[100px] border-[2px] bg-primaryBg border-primaryColor group-hover:border-secondaryColor transition-all duration-500 border-opacity-10 flex items-center justify-center">
             <FaFigma className="h-[60px] w-[60px] text-primaryColor opacity-30 group-hover:text-secondaryColor group-hover:opacity-100 transition-all duration-500" />
           </div>
