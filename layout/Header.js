@@ -13,7 +13,7 @@ export default function Header() {
 
   return (
     <header
-      className="container bg-primaryBg bg-opacity-80 text-primaryColor sticky top-0 shadow-md z-[999999] px-[10px] sm:px-[55px] py-[10px] text-[18px] font-[500]"
+      className="container bg-[#070d1b] text-primaryColor sticky top-0 shadow-md z-[999999] px-[10px] sm:px-[55px] py-[15px] text-[18px] font-[500]"
       ref={headerRef}
     >
       <div className="flex justify-between items-center">

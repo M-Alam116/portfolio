@@ -31,11 +31,11 @@ body {
   }
 
   .btn {
-    @apply bg-secondaryColor py-[15px] px-[40px] text-black text-[15px] font-[500] rounded-[60px] shadow-2xl drop-shadow-2xl;
+    @apply bg-secondaryColor py-[13px] px-[35px] text-black text-[15px] font-[500] rounded-[60px] shadow-2xl drop-shadow-2xl;
   }
 
   .heading {
-    @apply text-[24px] font-[600] text-secondaryColor;
+    @apply text-[28px] font-[500] text-secondaryColor tracking-wide mb-[5px] text-center;
   }
 }
 
@@ -87,5 +87,9 @@ body {
 
   .show__menu {
     display: block;
+  }
+
+  .heading {
+    font-size: 22px;
   }
 }

@@ -14,7 +14,7 @@ export default function Home() {
           Muhammad <br /> Alam
         </h1>
         <h2 className="text-[28px] font-[400]">
-          <span className="text-primaryColor opacity-50">And I'm a</span>{" "}
+          <span className="text-primaryColor opacity-60">And I'm a</span>{" "}
           <span className="text-secondaryColor">MERN Stack Web Developer</span>
         </h2>
 
@@ -32,10 +32,7 @@ export default function Home() {
 
         <div className="flex items-center gap-[1rem]">
           <Link href="#contact">
-            <button className="btn">Hire Me</button>
-          </Link>
-          <Link href="/">
-            <button className="btn">Download CV</button>
+            <button className="btn px-[50px]">Hire Me</button>
           </Link>
         </div>
       </div>
