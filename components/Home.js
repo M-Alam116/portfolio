@@ -20,13 +20,13 @@ export default function Home() {
 
         <div className="flex items-center gap-[1rem] my-[2rem]">
           <Link href="/">
-            <ImGithub className="w-[35px] h-[35px] cursor-pointer text-primaryColor hover:text-secondaryColor" />
+            <ImGithub className="w-[35px] h-[35px] cursor-pointer text-primaryColor opacity-70 hover:text-secondaryColor hover:opacity-100" />
           </Link>
           <Link href="/">
-            <PiLinkedinLogoBold className="w-[35px] h-[35px] cursor-pointer text-primaryColor hover:text-secondaryColor" />
+            <PiLinkedinLogoBold className="w-[35px] h-[35px] cursor-pointer text-primaryColor opacity-70 hover:text-secondaryColor hover:opacity-100" />
           </Link>
           <Link href="/">
-            <MdOutlineEmail className="w-[40px] h-[40px] cursor-pointer text-primaryColor hover:text-secondaryColor" />
+            <MdOutlineEmail className="w-[40px] h-[40px] cursor-pointer text-primaryColor opacity-70 hover:text-secondaryColor hover:opacity-100" />
           </Link>
         </div>
 
