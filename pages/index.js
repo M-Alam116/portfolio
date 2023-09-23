@@ -5,6 +5,7 @@ import About from "@/components/About";
 import Services from "@/components/Services";
 import Skill from "@/components/Skill";
 import Portfolio from "@/components/Portfolio";
+import Review from "@/components/Review";
 export default function HomePage() {
   return (
     <Fragment>
@@ -16,6 +17,7 @@ export default function HomePage() {
       <Services />
       <Skill />
       <Portfolio />
+      <Review />
     </Fragment>
   );
 }
