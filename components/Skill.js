@@ -16,7 +16,7 @@ export default function Skill() {
         </div>
       </div>
 
-      <div className="flex flex-wrap gap-[1rem] justify-center">
+      <div className="flex flex-wrap gap-[1rem] justify-center mt-[2rem]">
         <div className="group w-[150px] border-[2px] border-primaryColor border-opacity-20 hover:border-secondaryColor transition-all duration-500 rounded-lg flex flex-col items-center justify-center gap-[10px] p-[1rem] shadow-2xl drop-shadow-2xl">
           <Image src="/images/html.png" width={70} height={70} alt="" />
           <h1 className="text-[18px] font-[700] text-primaryColor tracking-wide group-hover:text-secondaryColor">

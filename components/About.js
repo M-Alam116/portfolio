@@ -70,7 +70,7 @@ export default function About() {
             </div>
           </div>
           <div className="mt-[3rem]">
-            <Link href="/">
+            <Link href="CV.pdf" target="_blank">
               <button className="btn">Download CV</button>
             </Link>
           </div>
