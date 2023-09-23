@@ -1,15 +1,57 @@
+import { useState, useEffect } from "react";
 import Image from "next/image";
 import Link from "next/link";
 import { useRef } from "react";
 import { BiMenu } from "react-icons/bi";
 import { ImCross } from "react-icons/im";
-import { useRouter } from "next/router";
 export default function Header() {
+  const [activeSection, setActiveSection] = useState("home");
   const headerRef = useRef(null);
   const menuRef = useRef(null);
-  const router = useRouter();
 
   const toggleMenu = () => menuRef.current.classList.toggle("show__menu");
+
+  const handleMenuItemClick = (section) => {
+    setActiveSection(section);
+  };
+
+  // useEffect(() => {
+  //   const handleScroll = () => {
+  //     const sections = [
+  //       "home",
+  //       "about",
+  //       "services",
+  //       "skill",
+  //       "resume",
+  //       "portfolio",
+  //       "contact",
+  //     ];
+  //     const scrollPosition = window.scrollY + window.innerHeight * 0.1;
+
+  //     for (const section of sections) {
+  //       const element = document.getElementById(section);
+  //       if (element) {
+  //         const { offsetTop, offsetHeight } = element;
+  //         if (
+  //           scrollPosition >= offsetTop &&
+  //           scrollPosition < offsetTop + offsetHeight
+  //         ) {
+  //           setActiveSection(section);
+  //           break;
+  //         }
+  //       }
+  //     }
+  //   };
+
+  //   setTimeout(() => {
+  //     handleScroll();
+  //   }, 1000);
+
+  //   window.addEventListener("scroll", handleScroll);
+  //   return () => {
+  //     window.removeEventListener("scroll", handleScroll);
+  //   };
+  // }, []);
 
   return (
     <header
@@ -19,20 +61,19 @@ export default function Header() {
       <div className="flex justify-between items-center">
         {/* ========== logo ============ */}
         <div className="">
-          {/* <Link href="/">
-              <Image src="/logo.png" width={100} height={85} alt="logo" />
-            </Link> */}
-          <h1 className="text-[30px] text-primaryColor opacity-80">Logo</h1>
+          <Link href="/">
+            <Image src="/logo3.png" width={170} height={120} alt="logo" />
+          </Link>
         </div>
 
         {/* ========== menu ========== */}
         <div className="navigation" ref={menuRef} onClick={toggleMenu}>
           <ul className="menu relative flex gap-[30px]">
             <ImCross className="block text-primaryColor absolute top-5 left-5 md:hidden" />
-            <Link href="/">
+            <Link href="/" onClick={() => handleMenuItemClick("home")}>
               <li
                 className={
-                  router.pathname === "/"
+                  activeSection === "home"
                     ? "active"
                     : "hover:text-secondaryColor"
                 }
@@ -40,10 +81,10 @@ export default function Header() {
                 Home
               </li>
             </Link>
-            <Link href="#about">
+            <Link href="#about" onClick={() => handleMenuItemClick("about")}>
               <li
                 className={
-                  router.pathname === "#about"
+                  activeSection === "about"
                     ? "active"
                     : "hover:text-secondaryColor"
                 }
@@ -51,10 +92,13 @@ export default function Header() {
                 About
               </li>
             </Link>
-            <Link href="#services">
+            <Link
+              href="#services"
+              onClick={() => handleMenuItemClick("services")}
+            >
               <li
                 className={
-                  router.pathname === "#services"
+                  activeSection === "services"
                     ? "active"
                     : "hover:text-secondaryColor"
                 }
@@ -62,10 +106,10 @@ export default function Header() {
                 Services
               </li>
             </Link>
-            <Link href="#skill">
+            <Link href="#skill" onClick={() => handleMenuItemClick("skill")}>
               <li
                 className={
-                  router.pathname === "#skill"
+                  activeSection === "skill"
                     ? "active"
                     : "hover:text-secondaryColor"
                 }
@@ -73,10 +117,10 @@ export default function Header() {
                 My Skills
               </li>
             </Link>
-            <Link href="#resume">
+            <Link href="#resume" onClick={() => handleMenuItemClick("resume")}>
               <li
                 className={
-                  router.pathname === "#resume"
+                  activeSection === "resume"
                     ? "active"
                     : "hover:text-secondaryColor"
                 }
@@ -84,10 +128,13 @@ export default function Header() {
                 Resume
               </li>
             </Link>
-            <Link href="#portfolio">
+            <Link
+              href="#portfolio"
+              onClick={() => handleMenuItemClick("portfolio")}
+            >
               <li
                 className={
-                  router.pathname === "#portfolio"
+                  activeSection === "portfolio"
                     ? "active"
                     : "hover:text-secondaryColor"
                 }
@@ -95,10 +142,13 @@ export default function Header() {
                 Portfolio
               </li>
             </Link>
-            <Link href="#contact">
+            <Link
+              href="#contact"
+              onClick={() => handleMenuItemClick("contact")}
+            >
               <li
                 className={
-                  router.pathname === "#contact"
+                  activeSection === "contact"
                     ? "active"
                     : "hover:text-secondaryColor"
                 }

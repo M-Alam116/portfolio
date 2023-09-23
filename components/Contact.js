@@ -53,7 +53,9 @@ export default function Contact() {
               className="resize-none w-full px-[15px] py-[12px] text-[16px] text-primaryColor text-opacity-60 bg-[#101624] border-[1px] border-primaryColor border-opacity-10 rounded-md focus:border-none outline-none focus:outline-[1px] focus:outline-secondaryColor transition-all duration-200"
             ></textarea>
 
-            <button type="submit" className="btn sm:w-fit">Send Message</button>
+            <button type="submit" className="btn sm:w-fit">
+              Send Message
+            </button>
           </form>
         </div>
         <div className="w-full">
@@ -72,8 +74,12 @@ export default function Contact() {
                 <MdEmail className="w-[25px] h-[25px] text-primaryColor opacity-60 group-hover:text-secondaryColor group-hover:opacity-100 transition-all duration-300" />
               </div>
               <div className="">
-                <h1 className="text-[22px] font-[400] text-primaryColor">Email</h1>
-                <p className="text-[16px] font-[400] text-primaryColor opacity-60">malam53345@gmail.com</p>
+                <h1 className="text-[22px] font-[400] text-primaryColor">
+                  Email
+                </h1>
+                <p className="text-[16px] font-[400] text-primaryColor opacity-60">
+                  malam53345@gmail.com
+                </p>
               </div>
             </div>
 
@@ -82,8 +88,12 @@ export default function Contact() {
                 <MdLocationOn className="w-[25px] h-[25px] text-primaryColor opacity-60 group-hover:text-secondaryColor group-hover:opacity-100 transition-all duration-300" />
               </div>
               <div className="">
-                <h1 className="text-[22px] font-[400] text-primaryColor">Address</h1>
-                <p className="text-[16px] font-[400] text-primaryColor opacity-60">Pakistan</p>
+                <h1 className="text-[22px] font-[400] text-primaryColor">
+                  Address
+                </h1>
+                <p className="text-[16px] font-[400] text-primaryColor opacity-60">
+                  Pakistan
+                </p>
               </div>
             </div>
 
@@ -91,19 +101,25 @@ export default function Contact() {
               Visite my social profile and get connected
             </p>
             <div className="flex gap-[20px] items-center">
-              <Link href="/">
+              <Link
+                href="https://www.linkedin.com/in/muhammad-alam-666099262/"
+                target="_blank"
+              >
                 <div className="group w-[60px] h-[60px] grid place-items-center border-[1px] border-primaryColor hover:border-secondaryColor border-opacity-50 hover:border-opacity-100 rounded-full cursor-pointer transition-all duration-300">
                   <AiFillLinkedin className="w-[30px] h-[30px] text-primaryColor opacity-60 group-hover:text-secondaryColor group-hover:opacity-100 transition-all duration-300" />
                 </div>
               </Link>
 
-              <Link href="/">
+              <Link href="https://github.com/M-Alam116" target="_blank">
                 <div className="group w-[60px] h-[60px] grid place-items-center border-[1px] border-primaryColor hover:border-secondaryColor border-opacity-50 hover:border-opacity-100 rounded-full cursor-pointer transition-all duration-300">
                   <AiFillGithub className="w-[30px] h-[30px] text-primaryColor opacity-60 group-hover:text-secondaryColor group-hover:opacity-100 transition-all duration-300" />
                 </div>
               </Link>
 
-              <Link href="/">
+              <Link
+                href="https://mail.google.com/mail/u/0/?view=cm&to=malam53345@gmail.com"
+                target="_blank"
+              >
                 <div className="group w-[60px] h-[60px] grid place-items-center border-[1px] border-primaryColor hover:border-secondaryColor border-opacity-50 hover:border-opacity-100 rounded-full cursor-pointer transition-all duration-300">
                   <MdEmail className="w-[30px] h-[30px] text-primaryColor opacity-60 group-hover:text-secondaryColor group-hover:opacity-100 transition-all duration-300" />
                 </div>

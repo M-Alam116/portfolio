@@ -14,7 +14,7 @@ export default function PortfolioCard({ title, image, link }) {
           className="rounded-[12px] group-hover:scale-105 transition-all duration-1000"
         />
 
-        <Link href={link}>
+        <Link href={link} target="_blank">
           <div className="hidden z-10 bg-secondaryColor w-[170px] group-hover:flex justify-center items-center gap-[10px] absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 px-4 py-3 rounded-md">
             <button className="text-[16px] font-[500]">Live Preview</button>
             <BiLinkExternal className="w-[20px] h-[20px]" />

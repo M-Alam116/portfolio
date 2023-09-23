@@ -18,19 +18,25 @@ export default function Home() {
         </h2>
 
         <div className="flex items-center gap-[1rem] my-[2rem]">
-          <Link href="/">
+          <Link
+            href="https://www.linkedin.com/in/muhammad-alam-666099262/"
+            target="_blank"
+          >
             <div className="group w-[60px] h-[60px] grid place-items-center border-[1px] border-primaryColor hover:border-secondaryColor border-opacity-50 hover:border-opacity-100 rounded-full cursor-pointer transition-all duration-300">
               <AiFillLinkedin className="w-[30px] h-[30px] text-primaryColor opacity-60 group-hover:text-secondaryColor group-hover:opacity-100 transition-all duration-300" />
             </div>
           </Link>
 
-          <Link href="/">
+          <Link href="https://github.com/M-Alam116" target="_blank">
             <div className="group w-[60px] h-[60px] grid place-items-center border-[1px] border-primaryColor hover:border-secondaryColor border-opacity-50 hover:border-opacity-100 rounded-full cursor-pointer transition-all duration-300">
               <AiFillGithub className="w-[30px] h-[30px] text-primaryColor opacity-60 group-hover:text-secondaryColor group-hover:opacity-100 transition-all duration-300" />
             </div>
           </Link>
 
-          <Link href="/">
+          <Link
+            href="https://mail.google.com/mail/u/0/?view=cm&to=malam53345@gmail.com"
+            target="_blank"
+          >
             <div className="group w-[60px] h-[60px] grid place-items-center border-[1px] border-primaryColor hover:border-secondaryColor border-opacity-50 hover:border-opacity-100 rounded-full cursor-pointer transition-all duration-300">
               <MdEmail className="w-[30px] h-[30px] text-primaryColor opacity-60 group-hover:text-secondaryColor group-hover:opacity-100 transition-all duration-300" />
             </div>
