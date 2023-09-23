@@ -73,6 +73,17 @@ export default function Header() {
                 My Skills
               </li>
             </Link>
+            <Link href="#resume">
+              <li
+                className={
+                  router.pathname === "#resume"
+                    ? "active"
+                    : "hover:text-secondaryColor"
+                }
+              >
+                Resume
+              </li>
+            </Link>
             <Link href="#portfolio">
               <li
                 className={

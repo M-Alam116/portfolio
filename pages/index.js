@@ -6,6 +6,8 @@ import Services from "@/components/Services";
 import Skill from "@/components/Skill";
 import Portfolio from "@/components/Portfolio";
 import Review from "@/components/Review";
+import Contact from "@/components/Contact";
+import Resume from "@/components/Resume";
 export default function HomePage() {
   return (
     <Fragment>
@@ -16,8 +18,10 @@ export default function HomePage() {
       <About />
       <Services />
       <Skill />
+      <Resume />
       <Portfolio />
       <Review />
+      <Contact />
     </Fragment>
   );
 }
