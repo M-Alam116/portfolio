@@ -1,6 +1,14 @@
 import { FaFigma } from "react-icons/fa";
 import { DiNodejs } from "react-icons/di";
+import { useScroll, motion } from "framer-motion";
+import { useRef } from "react";
 export default function Services() {
+  const ref = useRef(null);
+  const { scrollYProgress } = useScroll({
+    target: ref,
+    offset: ["0 1", "0.5, 1"],
+  });
+
   return (
     <section
       className="container flex flex-col pt-[60px] px-[10px]"
@@ -19,7 +27,14 @@ export default function Services() {
       </div>
 
       <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-[2rem] place-items-center mt-[2rem]">
-        <div className="group max-w-[380px] bg-[#101624] w-full flex flex-col items-center justify-center gap-[1rem] border-[2px] border-primaryColor border-opacity-10 hover:border-secondaryColor transition-all duration-500 px-[1rem] py-[2rem] rounded-md">
+        <motion.div
+          ref={ref}
+          style={{
+            scale: scrollYProgress,
+            opacity: scrollYProgress,
+          }}
+          className="group max-w-[380px] bg-[#101624] w-full flex flex-col items-center justify-center gap-[1rem] border-[2px] border-primaryColor border-opacity-10 hover:border-secondaryColor transition-all duration-1000 px-[1rem] py-[2rem] rounded-md"
+        >
           <div className="w-[100px] h-[100px] rounded-[100px] border-[2px] bg-primaryBg border-primaryColor group-hover:border-secondaryColor transition-all duration-500 border-opacity-10 flex items-center justify-center">
             <svg
               xmlns="http://www.w3.org/2000/svg"
@@ -41,9 +56,16 @@ export default function Services() {
             life, making sure your website not only looks great but functions
             smoothly too.
           </p>
-        </div>
+        </motion.div>
 
-        <div className="group max-w-[380px] bg-[#101624] w-full flex flex-col items-center justify-center gap-[1rem] border-[2px] border-primaryColor border-opacity-10 hover:border-secondaryColor transition-all duration-500 px-[1rem] py-[2rem] rounded-md">
+        <motion.div
+          ref={ref}
+          style={{
+            scale: scrollYProgress,
+            opacity: scrollYProgress,
+          }}
+          className="group max-w-[380px] bg-[#101624] w-full flex flex-col items-center justify-center gap-[1rem] border-[2px] border-primaryColor border-opacity-10 hover:border-secondaryColor transition-all duration-1000 px-[1rem] py-[2rem] rounded-md"
+        >
           <div className="w-[100px] h-[100px] rounded-[100px] border-[2px] bg-primaryBg border-primaryColor group-hover:border-secondaryColor transition-all duration-500 border-opacity-10 flex items-center justify-center">
             <DiNodejs className="h-[80px] w-[80px] text-primaryColor opacity-30 group-hover:text-secondaryColor group-hover:opacity-100 transition-all duration-500" />
           </div>
@@ -55,9 +77,16 @@ export default function Services() {
             behind-the-scenes functionality of your website, ensuring it runs
             efficiently and securely.
           </p>
-        </div>
+        </motion.div>
 
-        <div className="group max-w-[380px] bg-[#101624] w-full flex flex-col items-center justify-center gap-[1rem] border-[2px] border-primaryColor border-opacity-10 hover:border-secondaryColor transition-all duration-500 px-[1rem] py-[2rem] rounded-md">
+        <motion.div
+          ref={ref}
+          style={{
+            scale: scrollYProgress,
+            opacity: scrollYProgress,
+          }}
+          className="group max-w-[380px] bg-[#101624] w-full flex flex-col items-center justify-center gap-[1rem] border-[2px] border-primaryColor border-opacity-10 hover:border-secondaryColor transition-all duration-1000 px-[1rem] py-[2rem] rounded-md"
+        >
           <div className="w-[100px] h-[100px] rounded-[100px] border-[2px] bg-primaryBg border-primaryColor group-hover:border-secondaryColor transition-all duration-500 border-opacity-10 flex items-center justify-center">
             <FaFigma className="h-[60px] w-[60px] text-primaryColor opacity-30 group-hover:text-secondaryColor group-hover:opacity-100 transition-all duration-500" />
           </div>
@@ -69,7 +98,7 @@ export default function Services() {
             make sure the design looks good and works well, creating a unique
             online presence for them.
           </p>
-        </div>
+        </motion.div>
       </div>
     </section>
   );

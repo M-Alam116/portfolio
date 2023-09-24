@@ -1,7 +1,12 @@
+import { motion, useInView } from "framer-motion";
 import { MdEmail, MdLocationOn } from "react-icons/md";
 import { AiFillLinkedin, AiFillGithub } from "react-icons/ai";
 import Link from "next/link";
+import { useRef } from "react";
 export default function Contact() {
+  const ref = useRef(null);
+  const isInView = useInView(ref, { once: true });
+
   return (
     <section
       className="container flex flex-col pt-[60px] px-[10px]"
@@ -20,7 +25,15 @@ export default function Contact() {
       </div>
 
       <div className="grid mx-auto grid-cols-1 md:grid-cols-2 gap-[3rem]">
-        <div className="w-full">
+        <motion.div
+          ref={ref}
+          style={{
+            transform: isInView ? "none" : "translateX(-200px)",
+            opacity: isInView ? 1 : 0,
+            transition: "all 1s cubic-bezier(0.17, 0.55, 0.55, 1) 0.8s",
+          }}
+          className="w-full"
+        >
           <h1 className="text-[30px] font-[400] text-primaryColor mb-[2rem]">
             Just say Hello
           </h1>
@@ -57,8 +70,16 @@ export default function Contact() {
               Send Message
             </button>
           </form>
-        </div>
-        <div className="w-full">
+        </motion.div>
+        <motion.div
+          ref={ref}
+          style={{
+            transform: isInView ? "none" : "translateX(200px)",
+            opacity: isInView ? 1 : 0,
+            transition: "all 1s cubic-bezier(0.17, 0.55, 0.55, 1) 0.8s",
+          }}
+          className="w-full"
+        >
           <h1 className="text-[30px] font-[400] text-primaryColor">
             Contact Info
           </h1>
@@ -126,7 +147,7 @@ export default function Contact() {
               </Link>
             </div>
           </div>
-        </div>
+        </motion.div>
       </div>
     </section>
   );

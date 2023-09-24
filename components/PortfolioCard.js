@@ -1,9 +1,23 @@
+import { useScroll, motion } from "framer-motion";
+import { useRef } from "react";
 import Image from "next/image";
 import Link from "next/link";
 import { BiLinkExternal } from "react-icons/bi";
 export default function PortfolioCard({ title, image, link }) {
+  const ref = useRef(null);
+  const { scrollYProgress } = useScroll({
+    target: ref,
+    offset: ["0 1", "0.5, 1"],
+  });
   return (
-    <div className="group bg-[#101624] hover:bg-[#0b101a] shadow-2xl max-w-[380px] w-full flex flex-col items-center py-[2.5rem] rounded-[20px] cursor-pointer">
+    <motion.div
+      ref={ref}
+      style={{
+        scale: scrollYProgress,
+        opacity: scrollYProgress,
+      }}
+      className="group bg-[#101624] hover:bg-[#0b101a] shadow-2xl max-w-[380px] w-full flex flex-col items-center py-[2.5rem] rounded-[20px] cursor-pointer transition-all duration-1000"
+    >
       <div className="rounded-[12px] relative overflow-hidden">
         <div className="overlay group-hover:opacity-100"></div>
         <Image
@@ -24,6 +38,6 @@ export default function PortfolioCard({ title, image, link }) {
       <h1 className="text-[24px] font-[600] text-primaryColor text-center leading-[25px] mt-[2rem] group-hover:text-secondaryColor transition-all duration-1000">
         {title}
       </h1>
-    </div>
+    </motion.div>
   );
 }
