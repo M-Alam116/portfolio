@@ -25,15 +25,7 @@ export default function Contact() {
       </div>
 
       <div className="grid mx-auto grid-cols-1 md:grid-cols-2 gap-[3rem]">
-        <motion.div
-          ref={ref}
-          style={{
-            transform: isInView ? "none" : "translateX(-200px)",
-            opacity: isInView ? 1 : 0,
-            transition: "all 1s cubic-bezier(0.17, 0.55, 0.55, 1) 0.8s",
-          }}
-          className="w-full"
-        >
+        <div className="w-full">
           <h1 className="text-[30px] font-[400] text-primaryColor mb-[2rem]">
             Just say Hello
           </h1>
@@ -70,16 +62,8 @@ export default function Contact() {
               Send Message
             </button>
           </form>
-        </motion.div>
-        <motion.div
-          ref={ref}
-          style={{
-            transform: isInView ? "none" : "translateX(200px)",
-            opacity: isInView ? 1 : 0,
-            transition: "all 1s cubic-bezier(0.17, 0.55, 0.55, 1) 0.8s",
-          }}
-          className="w-full"
-        >
+        </div>
+        <div className="w-full">
           <h1 className="text-[30px] font-[400] text-primaryColor">
             Contact Info
           </h1>
@@ -147,7 +131,7 @@ export default function Contact() {
               </Link>
             </div>
           </div>
-        </motion.div>
+        </div>
       </div>
     </section>
   );

@@ -10,16 +10,10 @@ export default function Home() {
   const firstMainDivAnimate = { x: 0 };
   const secondMainDivInitial = { x: 1000 };
   const secondMainDivAnimate = { x: 0 };
-  
+
   return (
-    <section className="container bg-primaryBg grid grid-cols-1 gap-[3rem] lg:gap-[10px] lg:grid-cols-2 px-[10px] pt-[30px]">
-      <motion.div
-        ref={ref}
-        initial={firstMainDivInitial}
-        animate={firstMainDivAnimate}
-        transition={{ duration: 0.7 }}
-        className="flex flex-col justify-center mx-auto pt-[2rem] lg:pt-0"
-      >
+    <section className="containers bg-primaryBg grid grid-cols-1 gap-[3rem] lg:gap-[10px] lg:grid-cols-2 px-[10px] pt-[30px]">
+      <div className="flex flex-col justify-center mx-auto pt-[2rem] lg:pt-0">
         <span className="text-[28px] font-[400] text-secondaryColor">
           Hello, I'm
         </span>
@@ -62,17 +56,12 @@ export default function Home() {
             <button className="btn px-[50px]">Hire Me</button>
           </Link>
         </div>
-      </motion.div>
-      <motion.div
-        initial={secondMainDivInitial}
-        animate={secondMainDivAnimate}
-        transition={{ duration: 0.7 }}
-        className="w-full flex justify-center lg:justify-end items-center"
-      >
+      </div>
+      <div className="w-full flex justify-center lg:justify-end items-center">
         <div className="">
           <Image src="/images/pic.png" width={500} height={700} alt="" />
         </div>
-      </motion.div>
+      </div>
     </section>
   );
 }

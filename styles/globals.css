@@ -15,7 +15,7 @@ body {
   font-family: "Poppins";
   scroll-behavior: smooth;
   background-color: #0a101e;
-  overflow-x: hidden;
+  /* overflow-x: hidden; */
 }
 
 .active {
