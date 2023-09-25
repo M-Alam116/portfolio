@@ -1,11 +1,7 @@
-import { motion, useInView } from "framer-motion";
 import { MdEmail, MdLocationOn } from "react-icons/md";
 import { AiFillLinkedin, AiFillGithub } from "react-icons/ai";
 import Link from "next/link";
-import { useRef } from "react";
 export default function Contact() {
-  const ref = useRef(null);
-  const isInView = useInView(ref, { once: true });
 
   return (
     <section

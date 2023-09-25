@@ -6,10 +6,15 @@ export default function Education() {
     target: ref,
     offset: ["0 1", "0.5, 1"],
   });
+
   return (
     <div className="w-full flex justify-evenly items-center lg:items-stretch flex-col lg:flex-row gap-[2rem] mt-[2rem]">
-      <div
-  
+      <motion.div
+        ref={ref}
+        style={{
+          scale:  scrollYProgress,
+          opacity: scrollYProgress,
+        }}
         className="max-w-[470px] w-full bg-[#101624] px-[1.5rem] py-[2rem] border-[2px] border-primaryColor border-opacity-10 rounded-[10px] hover:border-secondaryColor transition-all duration-1000"
       >
         <div className="flex flex-col sm:flex-row justify-between sm:items-center gap-[10px]">
@@ -32,9 +37,14 @@ export default function Education() {
           University of Engineering and Technology, Taxila, where I'm honing my
           skills in the world of technology and innovation.
         </p>
-      </div>
+      </motion.div>
 
-      <div
+      <motion.div
+        ref={ref}
+        style={{
+          scale: scrollYProgress,
+          opacity: scrollYProgress,
+        }}
         className="max-w-[470px] w-full bg-[#101624] px-[1.5rem] py-[2rem] border-[2px] border-primaryColor border-opacity-10 rounded-[10px] hover:border-secondaryColor transition-all duration-1000"
       >
         <div className="flex flex-col sm:flex-row justify-between sm:items-center gap-[10px]">
@@ -56,7 +66,7 @@ export default function Education() {
           I completed my HSSC (Higher Secondary School Certificate) from IMPC-H8
           in Islamabad.
         </p>
-      </div>
+      </motion.div>
     </div>
   );
 }

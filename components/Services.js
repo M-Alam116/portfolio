@@ -6,7 +6,7 @@ export default function Services() {
   const ref = useRef(null);
   const { scrollYProgress } = useScroll({
     target: ref,
-    offset: ["0 1", "1, 1"],
+    offset: ["0 1", "0.5, 1"],
   });
 
   return (
@@ -27,7 +27,12 @@ export default function Services() {
       </div>
 
       <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-[2rem] place-items-center mt-[2rem]">
-        <div
+        <motion.div
+          ref={ref}
+          style={{
+            scale: scrollYProgress,
+            opacity: scrollYProgress,
+          }}
           className="group max-w-[380px] bg-[#101624] w-full flex flex-col items-center justify-center gap-[1rem] border-[2px] border-primaryColor border-opacity-10 hover:border-secondaryColor transition-all duration-1000 px-[1rem] py-[2rem] rounded-md"
         >
           <div className="w-[100px] h-[100px] rounded-[100px] border-[2px] bg-primaryBg border-primaryColor group-hover:border-secondaryColor transition-all duration-500 border-opacity-10 flex items-center justify-center">
@@ -51,9 +56,14 @@ export default function Services() {
             life, making sure your website not only looks great but functions
             smoothly too.
           </p>
-        </div>
+        </motion.div>
 
-        <div
+        <motion.div
+          ref={ref}
+          style={{
+            scale: scrollYProgress,
+            opacity: scrollYProgress,
+          }}
           className="group max-w-[380px] bg-[#101624] w-full flex flex-col items-center justify-center gap-[1rem] border-[2px] border-primaryColor border-opacity-10 hover:border-secondaryColor transition-all duration-1000 px-[1rem] py-[2rem] rounded-md"
         >
           <div className="w-[100px] h-[100px] rounded-[100px] border-[2px] bg-primaryBg border-primaryColor group-hover:border-secondaryColor transition-all duration-500 border-opacity-10 flex items-center justify-center">
@@ -67,9 +77,14 @@ export default function Services() {
             behind-the-scenes functionality of your website, ensuring it runs
             efficiently and securely.
           </p>
-        </div>
+        </motion.div>
 
-        <div
+        <motion.div
+          ref={ref}
+          style={{
+            scale: scrollYProgress,
+            opacity: scrollYProgress,
+          }}
           className="group max-w-[380px] bg-[#101624] w-full flex flex-col items-center justify-center gap-[1rem] border-[2px] border-primaryColor border-opacity-10 hover:border-secondaryColor transition-all duration-1000 px-[1rem] py-[2rem] rounded-md"
         >
           <div className="w-[100px] h-[100px] rounded-[100px] border-[2px] bg-primaryBg border-primaryColor group-hover:border-secondaryColor transition-all duration-500 border-opacity-10 flex items-center justify-center">
@@ -83,7 +98,7 @@ export default function Services() {
             make sure the design looks good and works well, creating a unique
             online presence for them.
           </p>
-        </div>
+        </motion.div>
       </div>
     </section>
   );

@@ -63,7 +63,7 @@ export default function Header() {
         <div className="">
           <Link href="/">
             {/* <h1 className="text-[40px] font-[700] text-secondaryColor">Logo</h1> */}
-            <Image src="/logo3.png" width={170} height={120} alt="logo" />
+            <Image src="/logo3.png" width={170} height={40} alt="logo" />
           </Link>
         </div>
 

@@ -8,7 +8,12 @@ export default function Experience() {
   });
   return (
     <div className="w-full flex justify-center items-center mt-[2rem]">
-      <div
+      <motion.div
+        ref={ref}
+        style={{
+          scale: scrollYProgress,
+          opacity: scrollYProgress,
+        }}
         className="max-w-[480px] w-full bg-[#101624] px-[1.5rem] py-[2rem] border-[2px] border-primaryColor border-opacity-10 rounded-[10px] hover:border-secondaryColor transition-all duration-1000"
       >
         <h1 className="text-[25px] text-secondaryColor font-[500] leading-[30px]">
@@ -22,7 +27,7 @@ export default function Experience() {
           Whisper, a startup, where I focus on creating visually appealing and
           user-friendly website.
         </p>
-      </div>
+      </motion.div>
     </div>
   );
 }
