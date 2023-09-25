@@ -62,6 +62,7 @@ export default function Header() {
         {/* ========== logo ============ */}
         <div className="">
           <Link href="/">
+            {/* <h1 className="text-[40px] font-[700] text-secondaryColor">Logo</h1> */}
             <Image src="/logo3.png" width={170} height={120} alt="logo" />
           </Link>
         </div>

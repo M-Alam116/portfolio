@@ -25,7 +25,9 @@ export default function Contact() {
       </div>
 
       <div className="grid mx-auto grid-cols-1 md:grid-cols-2 gap-[3rem]">
-        <div className="w-full">
+        <div
+          className="w-full"
+        >
           <h1 className="text-[30px] font-[400] text-primaryColor mb-[2rem]">
             Just say Hello
           </h1>
@@ -63,7 +65,9 @@ export default function Contact() {
             </button>
           </form>
         </div>
-        <div className="w-full">
+        <div
+          className="w-full"
+        >
           <h1 className="text-[30px] font-[400] text-primaryColor">
             Contact Info
           </h1>
