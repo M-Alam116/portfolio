@@ -1,7 +1,49 @@
+import { ToastContainer, toast } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
+import { useState } from "react";
+import { useForm, ValidationError } from "@formspree/react";
 import { MdEmail, MdLocationOn } from "react-icons/md";
 import { AiFillLinkedin, AiFillGithub } from "react-icons/ai";
 import Link from "next/link";
+
 export default function Contact() {
+  const [state, handleSubmit] = useForm("xyyqnabw");
+
+  // State variables to hold form input values
+  const [name, setName] = useState("");
+  const [email, setEmail] = useState("");
+  const [subject, setSubject] = useState("");
+  const [message, setMessage] = useState("");
+
+  // Function to clear form input values
+  const clearFormInputs = () => {
+    setName("");
+    setEmail("");
+    setSubject("");
+    setMessage("");
+  };
+
+  const handleFormSubmit = async (e) => {
+    e.preventDefault();
+
+    // Continue with the Formspree submission as before
+    handleSubmit(e);
+
+    // If the form submission is successful, show a success notification
+    if (state.succeeded) {
+      toast.success("Message send successfully!", {
+        position: "top-right",
+        autoClose: 5000,
+        hideProgressBar: false,
+        closeOnClick: true,
+        pauseOnHover: true,
+        draggable: true,
+      });
+
+      // Clear the form inputs
+      clearFormInputs();
+    }
+  };
 
   return (
     <section
@@ -21,49 +63,78 @@ export default function Contact() {
       </div>
 
       <div className="grid mx-auto grid-cols-1 md:grid-cols-2 gap-[3rem]">
-        <div
-          className="w-full"
-        >
+        <div className="w-full">
           <h1 className="text-[30px] font-[400] text-primaryColor mb-[2rem]">
             Just say Hello
           </h1>
-          <form className="flex flex-col gap-[2rem]">
+          <form
+            onSubmit={handleFormSubmit}
+            className="flex flex-col gap-[2rem]"
+          >
             <input
+              id="name"
+              name="name"
               type="text"
               placeholder="Your Name"
               required
+              value={name}
+              onChange={(e) => setName(e.target.value)}
               className="w-full px-[15px] py-[12px] text-[16px] text-primaryColor text-opacity-60 bg-[#101624] border-[1px] border-primaryColor border-opacity-10 rounded-md focus:border-none outline-none focus:outline-[1px] focus:outline-secondaryColor transition-all duration-200"
             />
-
+            <ValidationError prefix="Name" field="name" errors={state.errors} />
             <input
+              id="email"
+              name="email"
               type="email"
-              required
               placeholder="Your Email"
+              required
+              value={email}
+              onChange={(e) => setEmail(e.target.value)}
               className="w-full px-[15px] py-[12px] text-[16px] text-primaryColor text-opacity-60 bg-[#101624] border-[1px] border-primaryColor border-opacity-10 rounded-md focus:border-none outline-none focus:outline-[1px] focus:outline-secondaryColor transition-all duration-200"
             />
-
+            <ValidationError
+              prefix="Email"
+              field="email"
+              errors={state.errors}
+            />
             <input
+              id="subject"
+              name="subject"
               type="text"
               required
               placeholder="Your Subject"
+              value={subject}
+              onChange={(e) => setSubject(e.target.value)}
               className="w-full px-[15px] py-[12px] text-[16px] text-primaryColor text-opacity-60 bg-[#101624] border-[1px] border-primaryColor border-opacity-10 rounded-md focus:border-none outline-none focus:outline-[1px] focus:outline-secondaryColor transition-all duration-200"
             />
-
+            <ValidationError
+              prefix="Subject"
+              field="subject"
+              errors={state.errors}
+            />
             <textarea
+              id="message"
+              name="message"
               rows="6"
               required
               placeholder="Your Message"
+              value={message}
+              onChange={(e) => setMessage(e.target.value)}
               className="resize-none w-full px-[15px] py-[12px] text-[16px] text-primaryColor text-opacity-60 bg-[#101624] border-[1px] border-primaryColor border-opacity-10 rounded-md focus:border-none outline-none focus:outline-[1px] focus:outline-secondaryColor transition-all duration-200"
             ></textarea>
-
+            <ValidationError
+              prefix="Message"
+              field="message"
+              errors={state.errors}
+            />
             <button type="submit" className="btn sm:w-fit">
               Send Message
             </button>
+            {/* React Toastify container */}
+            <ToastContainer />
           </form>
         </div>
-        <div
-          className="w-full"
-        >
+        <div className="w-full">
           <h1 className="text-[30px] font-[400] text-primaryColor">
             Contact Info
           </h1>
