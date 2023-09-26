@@ -1,11 +1,48 @@
+import { useEffect, useState } from "react";
 import Image from "next/image";
 import Link from "next/link";
 import { MdEmail } from "react-icons/md";
 import { AiFillLinkedin, AiFillGithub } from "react-icons/ai";
 export default function Home() {
+  const [typedText, setTypedText] = useState("");
+
+  useEffect(() => {
+    const strings = ["MERN Stack Web Developer"];
+    let currentStringIndex = 0;
+    let currentCharIndex = 0;
+    let isDeleting = false;
+
+    const typeText = () => {
+      const currentString = strings[currentStringIndex];
+      setTypedText((prevText) => {
+        const newTypedText = isDeleting
+          ? currentString.substring(0, currentCharIndex - 1)
+          : currentString.substring(0, currentCharIndex + 1);
+        if (!isDeleting && newTypedText === currentString) {
+          setTimeout(() => {
+            isDeleting = true;
+          }, 500); // Delay before starting to delete
+        } else if (isDeleting && newTypedText === "") {
+          isDeleting = false;
+          currentStringIndex = (currentStringIndex + 1) % strings.length;
+        }
+        currentCharIndex = isDeleting
+          ? currentCharIndex - 1
+          : currentCharIndex + 1;
+        return newTypedText;
+      });
+    };
+
+    const typeInterval = setInterval(typeText, 150); // Typing speed in milliseconds (adjust this value)
+
+    return () => {
+      clearInterval(typeInterval);
+    };
+  }, []);
+  
   return (
     <section className="container bg-primaryBg grid grid-cols-1 gap-[3rem] lg:gap-[10px] lg:grid-cols-2 px-[10px] pt-[30px]">
-      <div className="flex flex-col justify-center mx-auto pt-[2rem] lg:pt-0">
+      <div className="flex flex-col justify-center ml-0 md:ml-[2rem] pt-[2rem] lg:pt-0">
         <span className="text-[28px] font-[400] text-secondaryColor">
           Hello, I'm
         </span>
@@ -14,7 +51,7 @@ export default function Home() {
         </h1>
         <h2 className="text-[28px] font-[400]">
           <span className="text-primaryColor opacity-60">And I'm a</span>{" "}
-          <span className="text-secondaryColor">MERN Stack Web Developer</span>
+          <span className="text-secondaryColor">{typedText}</span>
         </h2>
 
         <div className="flex items-center gap-[1rem] my-[2rem]">
