@@ -3,6 +3,7 @@ import Image from "next/image";
 import Link from "next/link";
 import { MdEmail } from "react-icons/md";
 import { AiFillLinkedin, AiFillGithub } from "react-icons/ai";
+import { BsFillArrowUpCircleFill } from "react-icons/bs";
 export default function Home() {
   const [typedText, setTypedText] = useState("");
 
@@ -39,7 +40,7 @@ export default function Home() {
       clearInterval(typeInterval);
     };
   }, []);
-  
+
   return (
     <section className="container bg-primaryBg grid grid-cols-1 gap-[3rem] lg:gap-[10px] lg:grid-cols-2 px-[10px] pt-[30px]">
       <div className="flex flex-col justify-center ml-0 md:ml-[2rem] pt-[2rem] lg:pt-0">
@@ -91,6 +92,11 @@ export default function Home() {
           <Image src="/images/pic.png" width={500} height={700} alt="" />
         </div>
       </div>
+      <Link href="/">
+        <div className="fixed bottom-[1rem] right-[1rem] cursor-pointer shadow-2xl z-10 hidden lg:block">
+          <BsFillArrowUpCircleFill className="w-[3rem] h-[3rem] text-secondaryColor" />
+        </div>
+      </Link>
     </section>
   );
 }
