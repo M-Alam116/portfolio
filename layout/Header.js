@@ -55,14 +55,13 @@ export default function Header() {
 
   return (
     <header
-      className="container bg-[#070d1b] text-primaryColor sticky top-0 shadow-md z-[99] px-[10px] sm:px-[55px] py-[15px] text-[18px] font-[500]"
+      className="container bg-[#070d1b] text-primaryColor sticky top-0 shadow-md z-[99] px-[10px] py-[15px] sm:px-[55px] text-[18px] font-[500]"
       ref={headerRef}
     >
       <div className="flex justify-between items-center">
         {/* ========== logo ============ */}
         <div className="">
           <Link href="/">
-            {/* <h1 className="text-[40px] font-[700] text-secondaryColor">Logo</h1> */}
             <Image src="/logo3.png" width={170} height={40} alt="logo" />
           </Link>
         </div>

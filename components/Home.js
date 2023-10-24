@@ -87,9 +87,9 @@ export default function Home() {
           </Link>
         </div>
       </div>
-      <div className="w-full flex justify-center lg:justify-end items-center">
-        <div className="">
-          <Image src="/images/pic.png" width={500} height={700} alt="" />
+      <div className="w-full flex justify-center items-center">
+        <div className="rounded-full">
+          <Image src="/images/pic.png" width={470} height={650} alt="" className="rounded-full"/>
         </div>
       </div>
       <Link href="/">
