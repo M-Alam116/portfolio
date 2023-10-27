@@ -1,5 +1,10 @@
 export const projectsData = [
   {
+    title: "Admin Dashboard",
+    image: "/projects/dashboard.jpg",
+    link: "https://alam-admin-dashboard.netlify.app/",
+  },
+  {
     title: "Yofa Freelancing Platform",
     image: "/projects/yofa.jpg",
     link: "https://yofa.vercel.app/",

@@ -89,7 +89,7 @@ export default function Home() {
       </div>
       <div className="w-full flex justify-center items-center">
         <div className="rounded-full">
-          <Image src="/images/pic.png" width={470} height={650} alt="" className="rounded-full"/>
+          <Image src="/images/pic.png" width={490} height={650} alt="" className="rounded-full"/>
         </div>
       </div>
       <Link href="/">

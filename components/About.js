@@ -14,10 +14,16 @@ export default function About() {
           </div>
         </div>
       </div>
-      <div className="w-full grid grid-cols-1 md:grid-cols-2">
+      <div className="w-full grid grid-cols-1 md:grid-cols-2 gap-[20px]">
         <div className="w-full hidden md:flex justify-center">
-          <div className="">
-            <Image src="/images/pic.png" width={470} height={600} alt="" className="rounded-full" />
+          <div className="bg-[#0a1121] shadow-2xl drop-shadow-2xl rounded-[20px] border-[2px] border-white border-opacity-30 h-fit">
+            <Image
+              src="/images/pic.png"
+              width={470}
+              height={600}
+              alt=""
+              className=""
+            />
           </div>
         </div>
         <div className="flex flex-col items-start justify-center mt-[30px] md:mt-0">
