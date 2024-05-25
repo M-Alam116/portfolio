@@ -1,5 +1,25 @@
 export const projectsData = [
   {
+    title: "Doctor Appointment MERN Stack Web app",
+    image: "/projects/doctor-app.png",
+    link: "https://github.com/M-Alam116/Doctor-Appointment",
+  },
+  {
+    title: "Montu Landing Page",
+    image: "/projects/montu.png",
+    link: "https://montu-beta.vercel.app/",
+  },
+  {
+    title: "Mnaz Real Estate Website",
+    image: "/projects/mnaz.png",
+    link: "https://mnaz.vercel.app/",
+  },
+  {
+    title: "Arcana Landing Page",
+    image: "/projects/arcana.png",
+    link: "https://arcana-one.vercel.app/",
+  },
+  {
     title: "Admin Dashboard",
     image: "/projects/dashboard.jpg",
     link: "https://alam-admin-dashboard.netlify.app/",
@@ -20,12 +40,6 @@ export const projectsData = [
     title: "Allovr Website",
     image: "/projects/allovr.jpg",
     link: "https://allovr-mu.vercel.app/",
-  },
-
-  {
-    title: "Personal Blog Website",
-    image: "/projects/blog.jpg",
-    link: "https://nestjs-blog-one.vercel.app/",
   },
 
   {

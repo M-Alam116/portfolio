@@ -1,6 +1,6 @@
 import { useScroll, motion } from "framer-motion";
 import { useRef } from "react";
-export default function ExperienceCard({ role, company, date, desc }) {
+export default function ExperienceCard({ role, company, date, desc, type }) {
   const ref = useRef(null);
   const { scrollYProgress } = useScroll({
     target: ref,
@@ -18,10 +18,15 @@ export default function ExperienceCard({ role, company, date, desc }) {
       <h1 className="text-[25px] text-secondaryColor font-[500] leading-[30px]">
         {role}
       </h1>
-      <h2 className="text-[16px] text-primaryColor font-[400] leading-[25px] mt-[10px]">
-        {company}
-      </h2>
-      <span className="text-[16px] font-[400] text-primaryColor">{date}</span> 
+      <div className="flex justify-between items-center">
+        <h2 className="text-[16px] text-primaryColor font-[400] leading-[25px] mt-[10px]">
+          {company}
+        </h2>
+        <h2 className="text-[16px] text-secondaryColor font-[400] leading-[25px] mt-[10px]">
+          {type}
+        </h2>
+      </div>
+      <span className="text-[16px] font-[400] text-primaryColor">{date}</span>
       <p className="text-[16px] text-primaryColor font-[400] opacity-60 mt-[1.5rem]">
         {desc}
       </p>

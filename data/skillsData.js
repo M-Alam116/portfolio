@@ -20,16 +20,16 @@ export const skillsData = [
     image: "/skills/react.png",
   },
   {
+    name: "REACT NATIVE",
+    image: "/skills/react.png",
+  },
+  {
     name: "NEXT JS",
     image: "/skills/nextjs.png",
   },
   {
     name: "TAILWIND CSS",
     image: "/skills/tailwind.png",
-  },
-  {
-    name: "BOOTSTRAP",
-    image: "/skills/bootstrap.png",
   },
   {
     name: "MATERIAL UI",

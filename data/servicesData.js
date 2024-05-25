@@ -13,8 +13,8 @@ export const servicesData = [
   },
   {
     id: 3,
-    image: "/images/figma.png",
-    title: "Web Design",
-    desc: "I design websites from scratch when clients don't have one yet. I make sure the design looks good and works well, creating a unique online presence for them.",
+    image: "/images/app-dev.png",
+    title: "Mobile App Development",
+    desc: "I develop mobile applications using React Native, delivering high-quality, cross-platform apps that work seamlessly on both iOS and Android devices.",
   },
 ];
