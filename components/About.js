@@ -18,7 +18,7 @@ export default function About() {
         <div className="w-full hidden md:flex justify-center">
           <div className="bg-[#0a1121] shadow-2xl drop-shadow-2xl rounded-[20px] border-[2px] border-white border-opacity-30 h-fit">
             <Image
-              src="/images/pic.png"
+              src="/alam.png"
               width={470}
               height={600}
               alt=""
@@ -32,14 +32,13 @@ export default function About() {
             <span className="font-[600] opacity-80">Muhammad Alam</span>
           </h1>
           <h2 className="text-[24px] font-[500] text-secondaryColor my-[10px] leading-[30px]">
-            MERN Stack Web Developer
+            Full Stack Developer (MERN)
           </h2>
           <p className="text-[16px] font-[400] text-primaryColor opacity-60">
-            I am Muhammad Alam, a dedicated student pursuing a degree in
-            Software Engineering at the University of Engineering and
-            Technology, Taxila. I have a strong passion for web development, and
-            I specialize in building full-stack web applications using the MERN
-            stack.{" "}
+            Full-Stack Developer (MERN) | Next.js Specialist | AI Integration
+            with 2+ years of experience building scalable web applications.
+            Passionate about performance optimization and delivering seamless
+            user experiences through clean, maintainable code.
           </p>
           <div className="flex flex-col gap-[15px] mt-[20px]">
             <div className="flex gap-[52px] sm:gap-[85px]">
@@ -48,6 +47,14 @@ export default function About() {
               </span>
               <span className="text-[16px] font-[400] text-primaryColor opacity-60">
                 : malam53345@gmail.com
+              </span>
+            </div>
+            <div className="flex gap-[50px] sm:gap-[80px]">
+              <span className="text-[16px] font-[400] text-primaryColor opacity-60">
+                Phone
+              </span>
+              <span className="text-[16px] font-[400] text-primaryColor opacity-60">
+                : +923108368116
               </span>
             </div>
             <div className="flex gap-[57px] sm:gap-[90px]">

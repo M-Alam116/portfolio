@@ -1,11 +1,11 @@
 export const experienceData = [
   {
     id: 1,
-    role: "Web Developer",
-    company: "Codsoft",
-    type: "Remote Internship",
-    date: "(Aug 2023 - Sep 2023)",
-    desc: "I actively contributed to web application development projects during a one-month internship. Enhanced proficiency in coding languages and gained insights into collaborative development processes.",
+    role: "Frontend Web Developer",
+    company: "STech.ai",
+    type: "Onsite Job",
+    date: "(June 2024 - Present)",
+    desc: "At STech.ai, I work as a Frontend Web Developer where I contribute to building scalable and responsive web interfaces. I collaborate with cross-functional teams to implement new features, optimize performance, and ensure seamless user experiences using modern web technologies like React.js and Tailwind CSS.",
   },
   {
     id: 2,
@@ -13,6 +13,6 @@ export const experienceData = [
     company: "Da Wedding Whisper (StartUp)",
     type: "Onsite Internship",
     date: "(April 2023 - Sep 2023)",
-    desc: "I proudly served as a Front-End Web Developer at Da Wedding Whisper, a startup, where I focus on creating visually appealing and user-friendly website.",
+    desc: "I proudly served as a Front-End Web Developer at Da Wedding Whisper, a startup, where I focused on creating visually appealing and user-friendly websites.",
   },
 ];

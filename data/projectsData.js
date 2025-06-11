@@ -1,68 +1,225 @@
-export const projectsData = [
-  {
-    title: "Doctor Appointment MERN Stack Web app",
-    image: "/projects/doctor-app.png",
-    link: "https://github.com/M-Alam116/Doctor-Appointment",
+export const caseStudies = [
+    {
+    image: "/case-studies/9.png",
+    title: "Summedify",
+    description:
+      "AI-powered platform that helps users summarize and organize information.",
+    features: [
+      "AI-Powered Summarization",
+      "Content Categorization",
+      "Search & Filter",
+      "Export Options",
+      "User-Friendly Dashboard",
+    ],
+    techStack: [
+      "Next.js",
+      "Tailwind CSS",
+      "TypeScript",
+      "MongoDB",
+      "Node.js",
+      "Express.js",
+      "AI",
+    ],
+    link: "https://www.summedify.com/",
   },
   {
-    title: "Montu Landing Page",
-    image: "/projects/montu.png",
-    link: "https://montu-beta.vercel.app/",
+    image: "/case-studies/1.png",
+    title: "Allovr MU",
+    description:
+      "Allovr MU is a multi-user web application designed for collaboration, data sharing, and project management.",
+    features: [
+      "Real-Time Collaboration",
+      "Authentication System",
+      "Customizable Dashboard",
+      "Performance Optimization",
+      "Cross-Platform Compatibility",
+    ],
+    techStack: ["React.js", "Next.js", "Tailwind CSS"],
+    link: "https://allovr-mu.vercel.app/",
   },
   {
-    title: "Mnaz Real Estate Website",
-    image: "/projects/mnaz.png",
-    link: "https://mnaz.vercel.app/",
+    image: "/case-studies/2.png",
+    title: "AMC Mess Management System",
+    description:
+      "AMC Mess Management System is a web-based platform that simplifies mess operations.",
+    features: [
+      "Meal Plan Scheduling",
+      "Automated Billing System",
+      "User Subscription Management",
+      "Reports & Analytics",
+      "Responsive Design",
+    ],
+    techStack: ["React.js", "Next.js", "Node.js", "Express.js", "MongoDB"],
+    link: "https://amc-mess.vercel.app/public/home",
   },
   {
-    title: "Arcana Landing Page",
-    image: "/projects/arcana.png",
+    image: "/case-studies/3.png",
+    title: "Arcana",
+    description:
+      "Arcana is an innovative web application designed for secure digital asset management.",
+    features: [
+      "Secure Digital Asset Storage",
+      "Blockchain-Powered Authentication",
+      "AI-Driven Analytics",
+      "Smooth UI/UX",
+      "Fast Performance",
+    ],
+    techStack: ["React.js", "Next.js", "TypeScript", "Tailwind CSS"],
     link: "https://arcana-one.vercel.app/",
   },
   {
+    image: "/case-studies/4.png",
+    title: "Client Diversity",
+    description:
+      "Client Diversity is a web platform designed to showcase client portfolios.",
+    features: [
+      "Client Portfolio Showcase",
+      "Customizable UI",
+      "Testimonial & Review Section",
+      "Performance Optimized",
+      "Multi-Device Support",
+    ],
+    techStack: ["React.js", "Next.js", "Tailwind CSS", "TypeScript"],
+    link: "https://client-diversity.vercel.app/",
+  },
+  {
+    image: "/case-studies/5.png",
+    title: "Home Land (Real Estate Platform)",
+    description:
+      "Home Land is an advanced real estate platform with AI-powered property search.",
+    features: [
+      "Advanced Property Search",
+      "AI-Powered Recommendations",
+      "Interactive Property Maps",
+      "Contact & Inquiry System",
+      "Mobile-Optimized UI",
+    ],
+    techStack: ["React.js", "Tailwind CSS"],
+    link: "https://home-land.netlify.app",
+  },
+  {
+    image: "/case-studies/6.png",
+    title: "Completed Offerings Dashboard",
+    description:
+      "Dashboard to showcase finalized projects in a structured format.",
+    features: [
+      "Project Tracking",
+      "Search & Filter",
+      "User-Friendly UI",
+      "Responsive Design",
+      "Data Export",
+    ],
+    techStack: ["React.js", "Next.js", "Tailwind CSS"],
+    link: "https://mnaz.vercel.app/",
+  },
+  {
+    image: "/case-studies/7.png",
+    title: "Montu Platform",
+    description:
+      "Montu is an early-stage web application designed for testing and feedback collection.",
+    features: [
+      "Beta Testing Environment",
+      "User Feedback System",
+      "Interactive UI",
+      "Real-Time Updates",
+      "Secure Access",
+    ],
+    techStack: ["React.js", "Next.js", "Tailwind CSS", "TypeScript"],
+    link: "https://montu-beta.vercel.app/",
+  },
+  {
+    image: "/case-studies/8.png",
+    title: "Shahem Accounting",
+    description:
+      "Finance and accounting web application for financial management.",
+    features: [
+      "Automated Invoicing",
+      "Expense Tracking",
+      "Tax Calculation",
+      "Financial Dashboards",
+      "Cloud-Based Storage",
+    ],
+    techStack: ["React.js", "Next.js", "Tailwind CSS", "TypeScript"],
+    link: "https://shahem-accounting.vercel.app/",
+  },
+  {
+    image: "/case-studies/10.png",
+    title: "Wedding Management Platform",
+    description: "Comprehensive tool designed to streamline wedding planning.",
+    features: [
+      "Guest List Management",
+      "Vendor Coordination",
+      "Budget Tracking",
+      "Event Scheduling",
+      "Collaborative Planning",
+    ],
+    techStack: ["React.js", "Next.js", "Tailwind CSS", "Python", "Django"],
+    link: "https://wedding-zeta-five.vercel.app/",
+  },
+  {
+    image: "/case-studies/11.png",
+    title: "Young Birds Club NFT Marketplace",
+    description: "Cutting-edge NFT marketplace for artists and collectors.",
+    features: [
+      "NFT Minting",
+      "Marketplace",
+      "Auction System",
+      "Royalties for Creators",
+      "Secure Wallet Integration",
+      "Community Engagement",
+    ],
+    techStack: ["React.js", "Next.js", "Tailwind CSS", "TypeScript"],
+    link: "https://young-birds-club-seven.vercel.app/",
+  },
+  {
+    image: "/case-studies/12.png",
     title: "Admin Dashboard",
-    image: "/projects/dashboard.jpg",
+    description: "Modern, responsive admin panel for data management.",
+    features: [
+      "User-Friendly UI",
+      "Role-Based Access Control",
+      "Real-Time Data Analytics",
+      "Dark & Light Mode",
+      "Mobile Responsive",
+    ],
+    techStack: ["React.js", "Next.js", "Tailwind CSS", "Chart.js"],
     link: "https://alam-admin-dashboard.netlify.app/",
   },
   {
-    title: "Yofa Freelancing Platform",
-    image: "/projects/yofa.jpg",
+    image: "/case-studies/13.png",
+    title: "BlogPost",
+    description: "Feature-rich blogging platform with rich media integration.",
+    features: [
+      "Markdown Editor",
+      "SEO Optimization",
+      "Comments & Engagement",
+      "Rich Media Support",
+      "Mobile-Friendly",
+    ],
+    techStack: ["React.js", "Next.js", "Tailwind CSS"],
+    link: "https://blogpost-alam.vercel.app/",
+  },
+  {
+    image: "/case-studies/14.png",
+    title: "Yofa Freelance Platform",
+    description:
+      "Innovative freelance marketplace connecting professionals with clients.",
+    features: [
+      "Freelancer Profiles",
+      "Job Listings",
+      "Secure Payments",
+      "Project Management Tools",
+      "Review & Rating System",
+      "Mobile-Friendly",
+    ],
+    techStack: [
+      "React.js",
+      "Next.js",
+      "Tailwind CSS",
+      "Node.js",
+      "Express.js",
+      "MongoDB",
+    ],
     link: "https://yofa.vercel.app/",
-  },
-
-  {
-    title: "Young Birds Club NFT Website",
-    image: "/projects/young-birds.jpg",
-    link: "https://young-birds-club-seven.vercel.app/",
-  },
-
-  {
-    title: "Allovr Website",
-    image: "/projects/allovr.jpg",
-    link: "https://allovr-mu.vercel.app/",
-  },
-
-  {
-    title: "Real Estate Website",
-    image: "/projects/real-estate.jpg",
-    link: "https://home-land.netlify.app",
-  },
-
-  {
-    title: "Personal Portfolio Website",
-    image: "/projects/portfolio.jpg",
-    link: "https://m-alam.netlify.app",
-  },
-
-  {
-    title: "Natours Website",
-    image: "/projects/natours.jpg",
-    link: "https://natours-web-clone.netlify.app",
-  },
-
-  {
-    title: "Nexter Website",
-    image: "/projects/nexter.jpg",
-    link: "https://nexter-website-clone.netlify.app",
   },
 ];

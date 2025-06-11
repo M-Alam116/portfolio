@@ -18,7 +18,7 @@ export default function Services() {
         </div>
       </div>
 
-      <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-[2rem] place-items-center mt-[2rem]">
+      <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-[2rem] place-items-center mt-[2rem] self-stretch">
         {servicesData.map((data) => (
           <ServicesCard
             key={data.id}

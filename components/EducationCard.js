@@ -24,7 +24,7 @@ export default function EducationCard({ degree, institution, grade, desc }) {
             {institution}
           </h2>
         </div>
-        <div className="bg-primaryBg p-[10px] shadow-2xl w-[80px] h-fit">
+        <div className="bg-primaryBg p-[10px] shadow-2xl w-fit h-fit">
           <h1 className="text-[16px] text-secondaryColor font-[500] text-center">
             {grade}
           </h1>

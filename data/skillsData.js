@@ -20,10 +20,6 @@ export const skillsData = [
     image: "/skills/react.png",
   },
   {
-    name: "REACT NATIVE",
-    image: "/skills/react.png",
-  },
-  {
     name: "NEXT JS",
     image: "/skills/nextjs.png",
   },
@@ -54,13 +50,5 @@ export const skillsData = [
   {
     name: "FIGMA",
     image: "/skills/figma.png",
-  },
-  {
-    name: "C++",
-    image: "/skills/c.png",
-  },
-  {
-    name: "JAVA",
-    image: "/skills/java.png",
   },
 ];

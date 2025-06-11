@@ -3,9 +3,9 @@ export const educationData = [
     id: 1,
     degree: "BSc Software Engineering",
     institution:
-      "University of Engineering and Technology, Taxila (2021 - present)",
-    grade: "3.75/4",
-    desc: "I am currently pursuing a degree in software engineering at the University of Engineering and Technology, Taxila, where I'm honing my skills in the world of technology and innovation.",
+      "University of Engineering and Technology, Taxila (2021 - 2025)",
+    grade: "3.74/4",
+    desc: "I have completed my degree in Software Engineering from the University of Engineering and Technology, Taxila, where I gained strong technical knowledge and practical experience.",
   },
 
   {

@@ -8,7 +8,7 @@ export default function Home() {
   const [typedText, setTypedText] = useState("");
 
   useEffect(() => {
-    const strings = ["MERN Stack Web Developer"];
+    const strings = ["Full Stack Developer (MERN)"];
     let currentStringIndex = 0;
     let currentCharIndex = 0;
     let isDeleting = false;
@@ -89,7 +89,7 @@ export default function Home() {
       </div>
       <div className="w-full flex justify-center items-center">
         <div className="rounded-full">
-          <Image src="/images/pic.png" width={490} height={650} alt="" className="rounded-full"/>
+          <Image src="/alam.png" width={450} height={450} alt="" className="rounded-full"/>
         </div>
       </div>
       <Link href="/">

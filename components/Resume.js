@@ -5,11 +5,11 @@ export default function Resume() {
   const [tab, setTab] = useState(true);
 
   const handleEducation = () => {
-    setTab(true);
+    setTab(false);
   };
 
   const handleExperience = () => {
-    setTab(false);
+    setTab(true);
   };
 
   return (
@@ -32,7 +32,7 @@ export default function Resume() {
       <div className="flex gap-[2rem] justify-center my-[2rem]">
         <div
           className="group w-[200px] py-[15px] bg-[#101624] shadow-2xl grid place-items-center rounded-md cursor-pointer"
-          onClick={handleEducation}
+          onClick={handleExperience}
         >
           <h1
             className={`text-[20px] font-[500] ${
@@ -41,13 +41,12 @@ export default function Resume() {
                 : "text-primaryColor opacity-70"
             }  tracking-wide group-hover:text-secondaryColor group-hover:opacity-100 transition-all duration-300`}
           >
-            Education
+            Experience
           </h1>
         </div>
-
         <div
           className="group w-[200px] py-[15px] bg-[#101624] shadow-2xl grid place-items-center rounded-md cursor-pointer"
-          onClick={handleExperience}
+          onClick={handleEducation}
         >
           <h1
             className={`text-[20px] font-[500] ${
@@ -56,12 +55,11 @@ export default function Resume() {
                 : "text-primaryColor opacity-70"
             }  tracking-wide group-hover:text-secondaryColor group-hover:opacity-100 transition-all duration-300`}
           >
-            Experience
+            Education
           </h1>
         </div>
       </div>
-
-      <div className="w-full">{tab ? <Education /> : <Experience />}</div>
+      <div className="w-full">{!tab ? <Education /> : <Experience />}</div>
     </section>
   );
 }
